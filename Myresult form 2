@@ -1,0 +1,59 @@
+<?php
+	$jurusan = htmlspecialchars($_POST['jurusan']);
+	$kk = htmlspecialchars($_POST['kk']);
+	$mkk = htmlspecialchars($_POST['mkk']);
+  $alasan = htmlspecialchars($_POST['alasan']);
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CV 1103120019</title>
+</head>
+<style type="text/css">
+#cv {
+	background : gray;
+	height : auto;
+	width : 500px;
+	margin : 0px auto;
+	border : 2px solid black;
+	border-collapse: collapse;
+	text-align : center;
+}
+#cv > #judul {
+	height : auto;
+	margin : 0px auto;
+	text-align : center;
+}
+
+td, td {
+	padding : 5px;
+}
+table, th, td{
+	border : 1px solid black;
+	border-collapse: collapse;
+}
+</style>
+<body>
+<div id="cv">
+  <div id="judul"><h2> FORM 1 </h2> </div>
+      <table width="95%" style="margin:5px auto;">
+    <tr>
+    	<th>Jurusan</th>
+    	<th>KK</th>
+    	<th>Matakuliah KK</th>
+    	<th>Alasan</th>
+    </tr>
+    <tr>
+    	<td><?php echo $jurusan;?></td>
+    	<td><?php echo $kk;?></td>
+    	<td><?php echo $mkk;?></td>
+    	<td><?php echo $alasan;?></td>
+    </tr>
+    </table>
+    <a href="index.html"><button>index</button></a>
+</div>
+</body>
+</html>
